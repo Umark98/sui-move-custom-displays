@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.658.1",
+    "@mysten/bcs": "^1.0.3",
+    "@mysten/sui": "^1.35.0",
+    "@mysten/sui.js": "^0.54.1",
+    "bip39": "^3.1.0",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "add-display": "ts-node ./src/display.ts",
+    "create-supply": "ts-node ./src/Object_creation_scripts/create_supply.ts",
+    "mint": "ts-node ./src/Object_creation_scripts/mint_and_transfer.ts",
+    "multiple-recipients": "ts-node ./src/Object_creation_scripts/multiple_recipients.ts",
+    "lineage": "ts-node ./src/Object_creation_scripts/lineage.ts",
+    "update-supply": "ts-node ./src/Object_creation_scripts/update_supply.ts",
+    "create-wallet": "ts-node ./src/Object_creation_scripts/custodialwallets.ts",
+    "mint-restricted": "ts-node ./src/Object_creation_scripts/mint_restricted.ts",
+    "read-object": "ts-node ./src/Object_creation_scripts/read.ts",
+    "edit-nft": "ts-node ./src/Object_creation_scripts/edit_nft.ts",
+    "edit-restricted": "ts-node ./src/Object_creation_scripts/edit_restricted.ts",
+
+    "change-display": "ts-node ./src/change_single_display.ts",
+
+    "create-table": "ts-node ./src/Vetting_scripts/create_vetting_table.ts",
+    "submit-vetting": "ts-node ./src/Vetting_scripts/submit_vetting.ts",
+    "approve-vetting": "ts-node ./src/Vetting_scripts/approve_vetting.ts",
+    "status-vetting": "ts-node ./src/Vetting_scripts/status.ts"
+  },
+  "devDependencies": {
+    "@types/bip39": "^3.0.4"
+  }
+}
